@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*header*/
+
+header {
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%;
+}
+
+.header__text a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #87d0f0;
+
+  z-index: 2;
+
+  margin: 18px 48px;
+  padding: 16px 0;
+}
+
+/*main*/
+
+main {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  z-index: 2;
+  background: url(../image/ultima-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*menu*/
+.menu {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  padding: 16px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #87d0f0;
+
+  border: 3px solid #f1f1f1;
+  line-height: 16px;
+  z-index: 2;
+  position: relative;
+}
+
+.menu ul {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu ul a i {
+  font-size: 32px;
+}
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 48px;
+  padding: 18px;
+  font-size: 15px;
+  line-height: 27px;
+  background-color: rgb(0, 0, 0);
+  color: #87d0f0;
+  border-radius: 12px;
+  margin-bottom: 16px;
+
+  z-index: 2;
+}
+
+.menu > ul > li:hover > ul {
+  display: block;
+}
+
+/*updates,begintoplay,information,
+news,about,terms,files
+*/
+
+.updates,
+.begintoplay,
+.information,
+.news,
+.about,
+.terms,
+.files {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 270px;
+  margin-right: 210px;
+
+  background: url(../image/parchment.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+
+.begintoplay{
+
+  overflow-y: scroll;
+}
+
+.updates img,
+.begintoplay img {
+  width: 15%;
+}
+
+h5 {
+  margin-bottom: 9px;
+  font-size: 15px;
+}
+
+
+
+.updates h1,
+.begintoplay h1,
+.information h1,
+.news h1,
+.about h1,
+.terms h1,
+.files h1 {
+  padding-top: 24px;
+  font-size: 32px;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+
+.begintoplay h1 {
+  margin-bottom: 27px;
+}
+
+.begintoplay h3 {
+  margin-bottom: 6px;
+  font-size: 21px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.begintoplay h4 {
+  margin-bottom: 15px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.begintoplay h3 a {
+  color: rgb(156, 83, 0); /* Default color for links */
+}
+
+.updates > ul > li {
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 24px;
+}
+
+.updates > ul > li > i {
+  font-size: 24px;
+}
+
+/*menu*/
+.sidemenu {
+  color: white;
+
+  font-size: 13px;
+  padding: 16px;
+  background-color: black;
+  color: #87d0f0;
+  font-family: "Press Start 2P", cursive;
+  border: 3px solid #f1f1f1;
+
+  position: absolute;
+  left: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 500px;
+}
+
+.sidemenu ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidemenu ul li {
+  margin-bottom: 8px;
+  padding: 12px;
+}
+
+/*footer*/
+
+footer {
+  background-color: black;
+  padding: 32px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+h3 {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: 24px;
+	
+}
